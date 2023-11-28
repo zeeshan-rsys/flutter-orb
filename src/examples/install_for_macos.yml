@@ -3,14 +3,14 @@ description: >
 usage:
   version: 2.1
   orbs:
-    flutter: circleci/flutter@2.0.0
+    flutter: circleci/flutter@3.0.0
   jobs:
     distribute:
       macos:
         xcode: 12.5.1
       steps:
         - flutter/install_sdk_and_pub:
-            version: 3.0.3
+            version: 3.10.3
         - flutter/install_ios_pod
         - flutter/install_ios_gem
         - run:

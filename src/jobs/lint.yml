@@ -4,12 +4,12 @@ parameters:
   registry:
     type: enum
     enum: ["cirrusci", "ghcr.io/cirruslabs"]
-    description: The registry to get the flutter image from, ghrc.io should be used for all flutter versions > 3.7.7.
+    description: The registry to get the flutter image from, ghrc.io should be used for all flutter versions > 3.10.3.
     default: "cirrusci"
   version:
     type: string
     description: The target version for the Flutter SDK.
-    default: "3.0.3"
+    default: "3.10.3"
   app-dir:
     default: .
     description: Path to the directory containing your pubspec.yaml file. Not needed if pubspec.yaml lives in the root.
